@@ -1,0 +1,34 @@
+.aside{
+    background: #AAA;
+    grid-area: aside;
+    
+    .nav{
+            .list{
+                @include reset();                            
+                .list-item{                    
+                    .list-item-link{                        
+                        color:$links;
+                        display: block; /* para organizar los botones y tome el ancho disponible*/
+                        padding:10px 20px;
+                        transition: background 1s;
+                    }                
+                    .list-item-link:hover{
+                        background: #DFDFDF;
+                    }
+                }
+                .list-item:last-child{
+                    .list-item-link{
+                        border-right: none;
+                    }
+                }
+            }
+        }
+    
+}
+/* no se debe mostrar para moviles*/
+@include mobile{
+    .aside{
+        display: none;
+    }
+    
+}

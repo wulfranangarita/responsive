@@ -1,0 +1,19 @@
+.section{
+    grid-area: section;
+    height: 100vh;
+    .image-list{
+        @include reset();
+        display:flex;
+        flex-wrap: wrap; /* ajuste de linea*/
+        list-style-type: none;
+        image-list-item{
+            @include reset();
+        }
+    }
+}
+@include mobile{
+    .section{
+        height: auto;
+    }
+
+}

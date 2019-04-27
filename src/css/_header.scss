@@ -1,0 +1,13 @@
+.header{
+    background:#FFF;
+    box-sizing: border-box; 
+    grid-area: header;
+    padding: 10px 0;
+    width: 100%;
+    .logo{
+        @include reset();
+        color: $main-color;
+    }
+        
+}
+    
